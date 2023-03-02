@@ -1,0 +1,76 @@
+PS D:\EDJD\1ºAno\2ºSemestre\Técnicas de Desenvolvimento de Videojogos\Experimento001> git add --all
+PS D:\EDJD\1ºAno\2ºSemestre\Técnicas de Desenvolvimento de Videojogos\Experimento001> git commit -m "first commit"
+[main (root-commit) 5ae58ab] first commit
+ 57 files changed, 337 insertions(+)
+ create mode 100644 Sokoban Resources/PNG/Character1.png
+ create mode 100644 Sokoban Resources/PNG/Character10.png
+ create mode 100644 Sokoban Resources/PNG/Character2.png
+ create mode 100644 Sokoban Resources/PNG/Character3.png
+ create mode 100644 Sokoban Resources/PNG/Character4.png
+ create mode 100644 Sokoban Resources/PNG/Character5.png
+ create mode 100644 Sokoban Resources/PNG/Character6.png
+ create mode 100644 Sokoban Resources/PNG/Character7.png
+ create mode 100644 Sokoban Resources/PNG/Character8.png
+ create mode 100644 Sokoban Resources/PNG/Character9.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Beige.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Black.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Blue.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Brown.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Gray.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Purple.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Red.png
+ create mode 100644 Sokoban Resources/PNG/CrateDark_Yellow.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Beige.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Black.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Blue.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Brown.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Gray.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Purple.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Red.png
+ create mode 100644 Sokoban Resources/PNG/Crate_Yellow.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Beige.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Black.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Blue.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Brown.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Gray.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Purple.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Red.png
+ create mode 100644 Sokoban Resources/PNG/EndPoint_Yellow.png
+ create mode 100644 Sokoban Resources/PNG/GroundGravel_Concrete.png
+ create mode 100644 Sokoban Resources/PNG/GroundGravel_Dirt.png
+ create mode 100644 Sokoban Resources/PNG/GroundGravel_Grass.png
+ create mode 100644 Sokoban Resources/PNG/GroundGravel_Sand.png
+ create mode 100644 Sokoban Resources/PNG/Ground_Concrete.png
+ create mode 100644 Sokoban Resources/PNG/Ground_Dirt.png
+ create mode 100644 Sokoban Resources/PNG/Ground_Grass.png
+ create mode 100644 Sokoban Resources/PNG/Ground_Sand.png
+ create mode 100644 Sokoban Resources/PNG/WallRound_Beige.png
+ create mode 100644 Sokoban Resources/PNG/WallRound_Black.png
+ create mode 100644 Sokoban Resources/PNG/WallRound_Brown.png
+ create mode 100644 Sokoban Resources/PNG/WallRound_Gray.png
+ create mode 100644 Sokoban Resources/PNG/Wall_Beige.png
+ create mode 100644 Sokoban Resources/PNG/Wall_Black.png
+ create mode 100644 Sokoban Resources/PNG/Wall_Brown.png
+ create mode 100644 Sokoban Resources/PNG/Wall_Gray.png
+ create mode 100644 Sokoban Resources/Preview_Sokoban.png
+ create mode 100644 Sokoban Resources/Sample_Sokoban.png
+ create mode 100644 Sokoban Resources/Spritesheet/sprites.png
+ create mode 100644 Sokoban Resources/Spritesheet/sprites.xml
+ create mode 100644 Sokoban Resources/Vector/Sokoban.svg
+ create mode 100644 Sokoban Resources/Vector/Sokoban.swf
+ create mode 100644 Sokoban Resources/license.txt
+PS D:\EDJD\1ºAno\2ºSemestre\Técnicas de Desenvolvimento de Videojogos\Experimento001> git push
+Enumerating objects: 63, done.
+Counting objects: 100% (63/63), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (62/62), done.
+Writing objects: 100% (63/63), 342.44 KiB | 11.05 MiB/s, done.
+Total 63 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/IsmaelIgnis/Experimento001.git
+ * [new branch]      main -> main
+PS D:\EDJD\1ºAno\2ºSemestre\Técnicas de Desenvolvimento de Videojogos\Experimento001> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
