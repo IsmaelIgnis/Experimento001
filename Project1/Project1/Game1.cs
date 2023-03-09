@@ -16,6 +16,7 @@ namespace Project1
         private char[,] level;
         private Texture2D player, dot, box, wall; //Load images Texture
         int tileSize = 64; //potencias de 2 (operações binárias)
+        private Player sokoban;
 
 
         public Game1()
@@ -31,6 +32,9 @@ namespace Project1
 
             base.Initialize();
             LoadLevel("level1.txt"); // Load the file "level1.txt"
+            _graphics.PreferredBackBufferHeight = tileSize * level.GetLength(1); //definição da altura
+            _graphics.PreferredBackBufferWidth = tileSize * level.GetLength(0); //definição da largura
+            _graphics.ApplyChanges(); //aplica a atualização da janela
         }
 
         protected override void LoadContent()
@@ -68,6 +72,8 @@ namespace Project1
             {
                 for (int y = 0; y < level.GetLength(1); y++) //pega a segunda dimensão
                 {
+                    position.X = x * tileSize; // define o position
+                    position.Y = y * tileSize; // define o position
                     switch (level[x, y])
                     {
                         case 'Y':
@@ -85,6 +91,9 @@ namespace Project1
                     }
                 }
             }
+            position.X = sokoban.Position.X * tileSize; //posição do Player
+            position.Y = sokoban.Position.Y * tileSize; //posição do Player
+            _spriteBatch.Draw(player, position, Color.White); //desenha o Player
             _spriteBatch.End();
 
 
@@ -102,7 +111,15 @@ namespace Project1
             {
                 for (int y = 0; y < nrLinhas; y++)
                 {
-                    level[x, y] = linhas[y][x];
+                    if (linhas[y][x] == 'Y')
+                    {
+                        sokoban = new Player(x, y);
+                        level[x, y] = ' '; // put a blank instead of the sokoban 'Y'
+                    }
+                    else
+                    {
+                        level[x, y] = linhas[y][x];
+                    }
                 }
             }
 
