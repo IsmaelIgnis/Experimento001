@@ -108,11 +108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\Project1.csproj",
+      "projectUniqueName": "D:\\Universidade__OS(D.)\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\Project1.csproj",
       "projectName": "Project1",
-      "projectPath": "D:\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\Project1.csproj",
+      "projectPath": "D:\\Universidade__OS(D.)\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\Project1.csproj",
       "packagesPath": "C:\\Users\\ismae\\.nuget\\packages\\",
-      "outputPath": "D:\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\obj\\",
+      "outputPath": "D:\\Universidade__OS(D.)\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -171,7 +171,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

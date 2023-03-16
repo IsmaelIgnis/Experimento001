@@ -10,13 +10,20 @@ using Microsoft.Xna.Framework.Input;
 
 namespace Project1
 {
+    enum Direction
+    {
+        Up, Down, Left, Right // 0, 1, 2, 3
+    }
     public class Player
     {
-        private bool keysReleased = true;
-        private Game1 game; //reference from Game1 to Player
+        public bool keysReleased = true;
+        public Game1 game; //reference from Game1 to Player
         // Current player position in the matrix (multiply by tileSize prior to drawing)
-        private Point position; //Point = Vector2, mas são inteiros
+        public Point position; //Point = Vector2, mas são inteiros
         
+        public Direction direction = Direction.Down;
+
+
         public Point Position => position; //auto função (equivalente a ter só get sem put)
 
         public Player(Game1 game1, int x, int y) //constructor que dada a as posições guarda a sua posição
@@ -33,12 +40,28 @@ namespace Project1
             if (keysReleased)
             {
                 keysReleased = false;
-                if (kState.IsKeyDown(Keys.A)) position.X--;
-                else if (kState.IsKeyDown(Keys.W)) position.Y--;
-                else if (kState.IsKeyDown(Keys.S)) position.Y++;
-                else if (kState.IsKeyDown(Keys.D)) position.X++;
+                if (kState.IsKeyDown(Keys.A))
+                {
+                    position.X--;
+                    game.direction = Direction.Left;
+                }
+                else if ((kState.IsKeyDown(Keys.W)) || (kState.IsKeyDown(Keys.Up)))
+                {
+                    position.Y--;
+                    game.direction = Direction.Up;
+                }
+                else if ((kState.IsKeyDown(Keys.S)) || (kState.IsKeyDown(Keys.Down)))
+                {
+                    position.Y++;
+                    game.direction = Direction.Down;
+                }
+                else if ((kState.IsKeyDown(Keys.D)) || (kState.IsKeyDown(Keys.Right)))
+                {
+                    position.X++;
+                    game.direction = Direction.Right;
+                }
                 else keysReleased = true;
-                
+
                 // destino é caixa?
                 if (game.HasBox(position.X, position.Y))
                 {
@@ -79,7 +102,14 @@ namespace Project1
             }
         }
 
-        
+        public void Draw(SpriteBatch sb)
+        {
+            Rectangle rect = new Rectangle(Game1.tileSize * position.X,
+            Game1.tileSize * position.Y,
+            Game1.tileSize, Game1.tileSize);
+            sb.Draw(sprites[(int)direction], rect, Color.White); //desenha o Player
+        }
+
 
 
     }

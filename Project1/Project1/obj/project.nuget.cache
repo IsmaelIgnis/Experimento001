@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qZnaHGLRe6X+CpApbdKywUyp67wmqYC4n9zAIEchMAMGX1GUpscE/sZYHQBhOCqB/11y20xnTNGumDEFoFGHrg==",
+  "dgSpecHash": "1XVJNJnD5Lqn0q3zjJq/Ldedz9kqOt9iUm27iyW2+SyOzS7sxCOINq7dj6di0GIDcDOSHvcIQCoKZsZJQVWPZw==",
   "success": true,
-  "projectFilePath": "D:\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\Project1.csproj",
+  "projectFilePath": "D:\\Universidade__OS(D.)\\EDJD\\1ºAno\\2ºSemestre\\Técnicas de Desenvolvimento de Videojogos\\Experimento001\\Project1\\Project1\\Project1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ismae\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
     "C:\\Users\\ismae\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"

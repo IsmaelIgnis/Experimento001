@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>D:/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/File1.spritefont</SourceFile>
-  <SourceTime>2023-03-07T17:16:47.7974128+00:00</SourceTime>
-  <DestFile>D:/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/bin/DesktopGL/Content/File1.xnb</DestFile>
-  <DestTime>2023-03-07T17:16:51.5326791+00:00</DestTime>
+  <SourceFile>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/File1.spritefont</SourceFile>
+  <SourceTime>2023-03-07T17:16:48+00:00</SourceTime>
+  <DestFile>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/bin/DesktopGL/Content/File1.xnb</DestFile>
+  <DestTime>2023-03-16T16:21:25.0581319+00:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

@@ -3,25 +3,31 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using System.IO;
-using System.Numerics;
 
 
 namespace Project1
 {
+    //public enum Direction
+    //{
+    //    Up, Down, Left, Right // 0, 1, 2, 3
+    //}
+    
     public class Game1 : Game
     {
-        private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
-        private SpriteFont font;
-        private int nrLinhas = 0;
-        private int nrColunas = 0;
-        //private char[,] level;
+        public GraphicsDeviceManager _graphics;
+        public SpriteBatch _spriteBatch;
+        public SpriteFont font;
+        public int nrLinhas = 0;
+        public int nrColunas = 0;
+        //public char[,] level;
         public char[,] level;
-        private Texture2D player, dot, box, wall; //Load images Texture
+        public Texture2D dot, box, wall; //Load images Texture
         int tileSize = 64; //potencias de 2 (operações binárias)
-        private Player sokoban;
+        public Player sokoban;
         public List<Point> boxes;
-
+        //public Texture2D[] player;
+        //public Direction direction = Direction.Down;
+        public int tileSize = 64; //potencias de 2 (operações binárias)
 
         public Game1()
         {
@@ -33,6 +39,8 @@ namespace Project1
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            sokoban.LoadContent();
+
 
             base.Initialize();
             LoadLevel("level1.txt"); // Load the file "level1.txt"
@@ -45,10 +53,16 @@ namespace Project1
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             font = Content.Load<SpriteFont>("File1"); // Use the name of sprite font file ('File')
-            player = Content.Load<Texture2D>("Character4");
+            //player = Content.Load<Texture2D>("Character4");
             dot = Content.Load<Texture2D>("EndPoint_Red");
             box = Content.Load<Texture2D>("Crate_Black");
             wall = Content.Load<Texture2D>("Wall_Gray");
+
+            //player = new Texture2D[4];
+            //player[(int)Direction.Down] = Content.Load<Texture2D>("Character4");
+            //player[(int)Direction.Up] = Content.Load<Texture2D>("Character7");
+            //player[(int)Direction.Left] = Content.Load<Texture2D>("Character1");
+            //player[(int)Direction.Right] = Content.Load<Texture2D>("Character2");
 
             // TODO: use this.Content to load your game content here
         }
@@ -57,6 +71,10 @@ namespace Project1
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
+
+            if (Victory()) Exit(); // FIXME: Change current level
+
+            if (Keyboard.GetState().IsKeyDown(Keys.R)) Initialize();
 
             // TODO: Add your update logic here
             sokoban.Update(gameTime);
@@ -96,9 +114,9 @@ namespace Project1
                     }
                 }
             }
-            position.X = sokoban.Position.X * tileSize; //posição do Player
-            position.Y = sokoban.Position.Y * tileSize; //posição do Player
-            _spriteBatch.Draw(player, position, Color.White); //desenha o Player
+            //position.X = sokoban.Position.X * tileSize; //posição do Player
+            //position.Y = sokoban.Position.Y * tileSize; //posição do Player
+            //_spriteBatch.Draw(player[(int) direction], position, Color.White); //desenha o Player
 
             foreach (Point b in boxes)
             {
@@ -164,7 +182,14 @@ namespace Project1
 
         }
 
-
+        public bool Victory()
+        {
+            foreach (Point b in boxes) // pecorrer a lista das caixas
+            {
+                if (level[b.X, b.Y] != '.') return false; // verifica se há caixas sem pontos
+            }
+            return true;
+        }
 
 
 

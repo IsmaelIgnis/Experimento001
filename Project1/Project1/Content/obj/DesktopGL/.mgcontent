@@ -4,9 +4,37 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/File1.spritefont</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/../../../Sokoban Resources/PNG/Character4.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character1.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character10.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character2.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character3.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character4.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character5.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character6.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character7.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character8.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Character9.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Crate_Black.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/EndPoint_Red.png</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/File1.spritefont</File>
+    <File>D:/Universidade__OS(D.)/EDJD/1ºAno/2ºSemestre/Técnicas de Desenvolvimento de Videojogos/Experimento001/Project1/Project1/Content/Wall_Gray.png</File>
   </SourceFiles>
   <DestFiles>
+    <File>Character4.png</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
